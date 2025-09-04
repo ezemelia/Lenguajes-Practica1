@@ -25,8 +25,7 @@ while (ronda <= rondas_maximas) and (diferencia_de_puntos <= rondas_que_quedan):
         print("Entrada no válida. Debe ser piedra, papel o tijera.")
         continue
 
-    #jugada_pc = random.choice(opciones)
-    jugada_pc = "papel"
+    jugada_pc = random.choice(opciones)
     print(f"La computadora eligió: {jugada_pc}")
     if jugada_usuario == jugada_pc:
         print("Empate.")
