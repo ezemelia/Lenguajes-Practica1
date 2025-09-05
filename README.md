@@ -11,9 +11,8 @@ _(Se asume que ya se tiene instalado Python 3.X)_
 ## Qué hace el programa
 - Se simula una partida de "Piedra, Papel o Tijera" entre el usuario y la computadora.
 - La cantidad máxima de rondas que se jugarán se define en la variable `rondas_maximas`.
-- Si un jugador ya no puede alcanzar al otro en puntos, la partida finaliza.\
-Esto se calcula restando la diferencia de puntos entre ambos jugadores por la cantidad de rondas que quedan por jugarse.
+- Se juega "al mejor de X rondas". Si un jugador ya no puede alcanzar al otro en puntos, la partida finaliza.\
+Esta situación se da si la diferencia de puntos entre ambos jugadores es mayor que la cantidad de rondas que quedan por jugarse.
 - Las rondas empatadas se cuentan.
 - Si el usuario ingresa una opción inválida se le solicita un nuevo ingreso, sin contar la ronda.
-- 
 
