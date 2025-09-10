@@ -21,9 +21,9 @@ rondas_que_quedan = rondas_maximas - ronda
 while (ronda <= rondas_maximas) and (diferencia_de_puntos <= rondas_que_quedan):
     print(f"\nRonda {ronda}")
     jugada_usuario = input("Tu jugada: ").strip().lower()
-    if jugada_usuario not in opciones:
+    while jugada_usuario not in opciones:
         print("Entrada no válida. Debe ser piedra, papel o tijera.")
-        continue
+        jugada_usuario = input("Tu jugada: ").strip().lower()
 
     jugada_pc = random.choice(opciones)
     print(f"La computadora eligió: {jugada_pc}")
